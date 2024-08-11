@@ -1,5 +1,8 @@
 # Banking predictions results
 
+## Abstrait
+
+Une banque souhaitant faire une campagne marketing auprès de prospects afin de prévoir ceux qui sont susceptibles d’ouvrir un compte courant via des méthodes statistiques d'apprentissages avec un ou des modèles en fonction des caractéristiques de ces prospects. Il s'agit d'un problème de classification.  
 
 ## Overall metrics results
 
