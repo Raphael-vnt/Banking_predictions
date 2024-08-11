@@ -1,5 +1,8 @@
 # Banking predictions results
 
+
+## Overall metrics results
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -56,8 +59,21 @@
 </table>
 </div>
 
+## Calibration
+
+Dans cette partie, nous analysons la calibration du modèle. La sortie des modèles étant des scores de probabilités on attendrait d'un modèle parfaitement calibré que lorsque ce dernier prédit une probabilité de 90%,
+la proportion observée soit effectivement de 90% ; et ce pour tout pourcentage.
 
 
+![png](banking_predictions_files/banking_predictions_110_0.png)
+    
+
+
+L'ensemble des modèles sont relativement bien calibrés avec Catboost comme modèle ayant la meilleure calibration. 
+
+
+
+## PR Curve
 
     
 ![png](banking_predictions_files/banking_predictions_101_0.png)
@@ -66,7 +82,7 @@
 
 
 
-
+## ROC Curve
     
 ![png](banking_predictions_files/banking_predictions_102_0.png)
     
@@ -80,6 +96,7 @@ quantifier l'impact de cette caractéristique sur les prédictions du modèle. P
 du modèle diminue après permutation, plus la caractéristique est jugée importante
 
 
+## Feature importance using permutation
 
     
 ![png](banking_predictions_files/banking_predictions_106_0.png)
@@ -89,15 +106,4 @@ Nous voyons dès lors que sur les 55 variables, beaucoup ne sont que peu signifi
 Également que la variable duration a une part importante dans l’explicabilité.
 
 
-Dans cette dernière partie, nous analysons la calibration du modèle. La sortie des modèles étant des scores de probabilités on attendrait d'un modèle parfaitement calibré que lorsque ce dernier prédit une probabilité de 90%,
-la proportion observée soit effectivement de 90% ; et ce pour tout pourcentage.
-
-
-
-    
-![png](banking_predictions_files/banking_predictions_110_0.png)
-    
-
-
-L'ensemble des modèles sont relativement bien calibrés avec Catboost comme modèle ayant la meilleure calibration. 
 
