@@ -64,15 +64,9 @@ Une banque souhaitant faire une campagne marketing auprès de prospects afin de 
 
 ## Calibration
 
-Dans cette partie, nous analysons la calibration du modèle. La sortie des modèles étant des scores de probabilités on attendrait d'un modèle parfaitement calibré que lorsque ce dernier prédit une probabilité de 90%,
-la proportion observée soit effectivement de 90% ; et ce pour tout pourcentage.
-
 
 ![png](banking_predictions_files/banking_predictions_110_0.png)
     
-
-
-L'ensemble des modèles sont relativement bien calibrés avec Catboost comme modèle ayant la meilleure calibration. 
 
 
 
